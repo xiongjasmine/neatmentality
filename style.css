@@ -29,6 +29,19 @@ header {
   background-color: #cdedf6;
 }
 
+input {
+  width: 250px;
+  height: 100px;
+  font-size: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=number]:focus {
+  background-color: #cdedf6;
+}
+
 .title {
   color: #121747;
 }
@@ -66,6 +79,14 @@ header {
 
 .reset {
   color: #85acd4;
+}
+
+.work {
+  color: #6887be;
+}
+
+.break {
+  color: #6887be;
 }
 
 #continue,
