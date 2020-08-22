@@ -16,7 +16,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient(to left top, #0045d6, #00a9f6);
+  background: linear-gradient(to left top, #2b3e90, #85acd4);
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,11 +26,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #cdedf6;
 }
 
 .title {
-  color: #0045d6;
+  color: #121747;
 }
 
 .content {
@@ -58,14 +58,14 @@ header {
 }
 
 .start {
-  color: #1f3;
+  color: #2b3e90;
 }
 .stop {
-  color: #E00;
+  color: #2b3e90;
 }
 
 .reset {
-  color: #9933ff;
+  color: #85acd4;
 }
 
 #continue,
