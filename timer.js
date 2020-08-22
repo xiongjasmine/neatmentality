@@ -76,3 +76,17 @@ function reset() {
   seconds = 0;
   location.reload();
 }
+
+function work() {
+  display("submit", "start");
+  seconds = 25 * 60;
+  minutesInput.style.display = "none";
+  calculate();
+}
+
+function takeBreak() {
+  display("submit", "start");
+  seconds = 5 * 60;
+  minutesInput.style.display = "none";
+  calculate();
+}
