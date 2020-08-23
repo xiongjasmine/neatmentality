@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Timer</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" type="text/css" href="timer-style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="navbar.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="applications.html">Applications</a>
+      <a href="#contact">Contact</a>
+      <a class="active" href="timer.html">Timer</a>
+    </div>
+
+    <div style="padding-left:16px"></div>
+
+    <header>
+      <h1 class="title">Study Timer</h1>
+    </header>
+
+    <div class="content">
+      <div class="buttons">
+        <div style="position: absolute; left: 40%; top: 200px">
+          <button class="btn work" id="work" value="1" onclick="work()">
+            Work for 25 Minutes
+          </button>
+          <br />
+          <button class="btn break" id="break" value="1" onclick="takeBreak()">
+            Break for 5 Minutes
+          </button>
+        </div>
+        <br />
+
+        <div style="position: absolute; left: 43%; top: 350px">
+          <div class="counter"></div>
+          <input id="minutes" type="number" placeholder="Minutes" />
+        </div>
+
+        <div class="buttons">
+          <div style="position: absolute; left: 44%; top: 450px">
+            <button
+              class="btn start"
+              id="start"
+              value="1"
+              onclick="check(this)"
+            >
+              Start
+            </button>
+
+            <button
+              class="btn start"
+              id="continue"
+              value="1"
+              onclick="check(this)"
+            >
+              Continue
+            </button>
+
+            <button class="btn stop" id="stop" value="0" onclick="check(this)">
+              Stop
+            </button>
+
+            <button class="btn start" id="submit" onclick="submit()">
+              Submit
+            </button>
+            <br />
+          </div>
+
+          <div style="position: absolute; left: 45%; top: 510px">
+            <button class="btn reset" id="reset" onclick="reset()">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- import the webpage's javascript file -->
+      <script src="timer.js"></script>
+      
+    </div>
+  </body>
+</html>
