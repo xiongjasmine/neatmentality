@@ -1,0 +1,242 @@
+/* CSS files add styling rules to your content */
+
+/*body {
+  margin: 0;
+  min-width: 250px;
+}
+*/
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #f7d7f1;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f7d7f1;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ffa8ff;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #d7eef7;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #fffcc2;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #fff980;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+h2 {
+  -webkit-text-stroke: 0.5px black;
+  color: #2b3e90;
+  font-size: 30px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  font-family: "Arial";
+  font-size: 90px;
+}
+
+.paragraph {
+  font-family: "Times New Roman";
+  color: #6887be;
+}
+
+/* code for hover boxes effects */
+
+.container1 {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+}
+
+.container .box {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.container .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #bfd4e8;
+  background: #bfd4e8;
+}
+
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #bfd4e8;
+}
+
+.container .box:nth-child(2) .icon {
+  box-shadow: 0 0 0 0 #85acd4;
+  background: #85acd4;
+}
+
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px #85acd4;
+}
+
+.container .box:nth-child(3) .icon {
+  box-shadow: 0 0 0 0 #6887be;
+  background: #6887be;
+}
+
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px #6887be;
+}
+
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container .box:hover .content {
+  color: #fff;
+}
