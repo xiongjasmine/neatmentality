@@ -14,9 +14,10 @@
   <body>
     <div class="topnav">
       <a href="index.html">Home</a>
-      <a href="applications.html">Applications</a>
-      <a href="#contact">Contact</a>
+      <a href="applications.html">Task Manager</a>
       <a class="active" href="timer.html">Timer</a>
+      <a href="contact.html">Meet the Team</a>
+      
     </div>
 
     <div style="padding-left:16px"></div>
@@ -24,10 +25,19 @@
     <header>
       <h1 class="title">Study Timer</h1>
     </header>
+    
+    <div class="paragraph">
+      <p>
+        Our study timer follows the famous Pomodoro Technique, a time management method. Essentially,
+        the method encourages one to study for a 25 minute block, and then take a 5 minute break, before
+        going back to studying. This is one efficient and organized way of studying, however, you can
+        also set your own time and study at your own pace.
+      </p>
+    </div>
 
     <div class="content">
       <div class="buttons">
-        <div style="position: absolute; left: 40%; top: 200px">
+        <div style="position: absolute; left: 40%; top: 310px">
           <button class="btn work" id="work" value="1" onclick="work()">
             Work for 25 Minutes
           </button>
@@ -38,13 +48,13 @@
         </div>
         <br />
 
-        <div style="position: absolute; left: 43%; top: 350px">
+        <div style="position: absolute; left: 43%; top: 460px">
           <div class="counter"></div>
           <input id="minutes" type="number" placeholder="Minutes" />
         </div>
 
         <div class="buttons">
-          <div style="position: absolute; left: 44%; top: 450px">
+          <div style="position: absolute; left: 44%; top: 560px">
             <button
               class="btn start"
               id="start"
@@ -73,7 +83,7 @@
             <br />
           </div>
 
-          <div style="position: absolute; left: 45%; top: 510px">
+          <div style="position: absolute; left: 44%; top: 620px">
             <button class="btn reset" id="reset" onclick="reset()">
               Reset
             </button>
