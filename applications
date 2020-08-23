@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Task Manager</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link href="navbar.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class="active" href="applications.html">Task Manager</a>
+      <a href="timer.html">Timer</a>
+      <a href="contact.html">Meet the Team</a>
+    </div>
+
+    <div style="padding-left:16px"></div>
+
+    <div id="myDIV" class="header">
+      <h2 style="margin:5px">My To Do List</h2>
+      
+      <div class="paragraph">
+        <p>
+          Our handy task manager helps list out all your tasks in a simple list to aid students in
+          visualizing all their tasks at hand. Add your own tasks, goals, and website links to the list
+          and check them off or delete them when you're done!
+        </p>
+      </div>
+      
+      <input type="text" id="myInput" placeholder="Add to your list!" />
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+      <li class="checked">Try this website!</li>
+    </ul>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js"></script>
+  </body>
+</html>
