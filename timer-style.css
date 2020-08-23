@@ -109,3 +109,8 @@ input[type=number]:focus {
 #seconds::placeholder {
   color: #ddd;
 }
+
+.paragraph {
+  font-family: "Lucida Console", Courier;
+  color: #6887be;
+}
